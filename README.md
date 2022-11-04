@@ -15,3 +15,7 @@
 2. css
 
 3. img(Pict folder)
+
+## 起動
+
+$python -m http.server 80xx

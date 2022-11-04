@@ -1,17 +1,17 @@
 # practice-html&css
 
-##動作環境
+## 動作環境
 
-1.OS・・・Win10 1909
+1. OS・・・Win10 1909
 
-2.Server・・・Python 3.10.8
+2. Server・・・Python 3.10.8
 
-3.Editor・・・VSCode
+3. Editor・・・VSCode
 
-##構成
+## 構成
 
-1.html
+1. html
 
-2.css
+2. css
 
-3.img(Pict folder)
+3. img(Pict folder)

@@ -33,9 +33,14 @@
 body {
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
+    min-width: 100%;
+    max-width: 100%;
+    height: auto;
 }
 .content {
     margin-bottom: 80px;
+    width: 100vw;
+    height: auto;
 }
 
 .logo-img {
@@ -50,9 +55,12 @@ body {
 }
 .container {
     display: grid;
-    grid-template-columns: 200px 200px 200px 200px;
-    gap: 10px;
+    grid-template-columns: 24vw 24vw 24vw 24vw;
+    grid-template-rows: auto;
+    gap: 0.5vw;
     margin-top: 10px;
+    margin-left: 1vw;
+    margin-right: 1vw;
 } 
 
 .background-black{
@@ -166,4 +174,10 @@ footer {
 footer p {
     color: #fff;
     font-size: 0.875rem;
+}
+.comp-image{
+    width: 90vw;
+    height: auto;
+    margin-left: 5vw;
+    margin-right: 5vw;
 }

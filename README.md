@@ -4,7 +4,7 @@
 
 1. OS・・・Win10 1909
 
-2. Server・・・Python 3.10.8
+2. Server・・・Python 3.11.2
 
 3. Editor・・・VSCode
 

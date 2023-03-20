@@ -16,6 +16,8 @@
 
 3. img(Pict folder)
 
+4. subserver(folder)
+
 ## 起動
 
 $python -m http.server 80xx

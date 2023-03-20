@@ -18,6 +18,8 @@
 
 4. subserver(folder)
 
+![論理構成図](https://github.com/YAKORUSU/practice-web-page/blob/main/img/Composition0.png)
+
 ## 起動
 
 $python -m http.server 80xx

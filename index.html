@@ -116,6 +116,50 @@
 		<a onclick="window.open('https://dev.mysql.com/downloads/')"><img class="buttom-image background-white" alt="MySql" src="img/mysql.png" border="1"></a>
 	</div>
 	<div class="content">
+		<div class="color2 background_line font_bold font_size09 margin_top20" style="padding-top:7px;">　Decode &amp; Copy Form</div>
+		<div class="font_size08">変換前パス</div>
+		<!-- <input type="text" name="textForm" id="uriText" class="input01"> -->
+		<input type="text" id="uriText" class="texin01" size="90">
+		<input type="button" value="変換&コピー" onclick="uriDecAndClipboard();" class="Button1"><br>
+
+		<div class="font_size08">変換後パス</div>
+		<hr>
+		<div class="font_size09" id="decUriText"></div>
+		<hr>
+
+		<script type="text/javascript">
+			function preset(){
+				document.getElementById('decUriText').innerHTML = '　'
+			}
+
+			function uriDecAndClipboard() {
+				// 文字列をデコードする
+				var decTextVal = decodeURIComponent(document.getElementById('uriText').value);
+				if (document.getElementById('uriText').value == ''){
+					return
+				}
+				else{
+					document.getElementById('decUriText').innerHTML = '<font color = red>' + decTextVal + '</font>';
+
+					// クリップボードへコピーする
+					var targetText = document.createElement("textArea");
+					targetText.value = decTextVal;
+					document.body.appendChild(targetText);
+					targetText.select();
+					document.execCommand("copy");
+					targetText.parentElement.removeChild(targetText);
+					return confirm('変換完了')
+				}
+				
+			}
+		</script>
+
+		<style height="100px">
+		input.input01 {width:95%;}
+		</style></div>
+			</div><div class="ms-clear"></div></div>
+	</div>
+	<div class="content">
 		<div class="color2 background_line font_bold font_size09 margin_top20" style="padding-top:7px;">　構成図</div>
 		<div class="container">
 			<img class="comp-image" alt="ConoHa" src="img/Composition0.png" border="0">
